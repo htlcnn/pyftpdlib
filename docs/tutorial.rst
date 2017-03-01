@@ -45,7 +45,7 @@ since they are a good workaround for avoiding DoS attacks.
         authorizer.add_anonymous(os.getcwd())
 
         # Instantiate FTP handler class
-        handler = FTPHandler
+        handler = FTPHandler()
         handler.authorizer = authorizer
 
         # Define a customized banner (string returned when client connects)
